@@ -1,9 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import Link from 'next/link';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+
 
 // Mock data - would come from an API in a real application
 const blogPosts = [
@@ -52,7 +50,7 @@ const blogPosts = [
 export default function BlogPage() {
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header />
+   
       
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Featured Post */}
@@ -145,7 +143,7 @@ export default function BlogPage() {
         </div>
       </main>
 
-      <Footer />
+     
     </div>
   );
 } 

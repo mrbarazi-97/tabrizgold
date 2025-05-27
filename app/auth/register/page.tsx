@@ -3,8 +3,6 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
 
 interface RegisterFormData {
   userType: 'buyer' | 'seller';
@@ -47,7 +45,6 @@ export default function RegisterPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-      <Header />
       
       <main className="max-w-3xl mx-auto px-4 py-16">
         <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
@@ -332,7 +329,6 @@ export default function RegisterPage() {
         </div>
       </main>
 
-      <Footer />
     </div>
   );
 } 
